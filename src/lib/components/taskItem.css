@@ -1,5 +1,5 @@
 
-	.task-item {
+.task-item {
 		background: var(--bg-card);
 		border-radius: var(--radius-xl);
 		padding: var(--space-6);
@@ -146,6 +146,13 @@
 		flex-shrink: 0;
 		flex-wrap: wrap;
 		align-items: center;
+	}
+
+	@media (max-width: 600px) {
+		.task-header { flex-direction: column; gap: var(--space-3); }
+		.task-status { align-self: flex-start; }
+		.task-footer { flex-direction: column; align-items: stretch; }
+		.task-actions { justify-content: flex-start; }
 	}
 
 	.edit-mode {

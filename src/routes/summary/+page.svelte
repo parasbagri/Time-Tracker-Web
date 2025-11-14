@@ -74,10 +74,8 @@
 
 				<div class="summary-left">
 					<div class="summary-section">
-						<h2 class="section-title">Daily Summary</h2>
-						
-						<div class="date-selector">
-							<label for="date">Select Date:</label>
+						<span class="summary-header" style="display: flex; align-items: center; justify-content: space-between; width: 100%; border: 1px solid #ccc; margin-bottom: 10px;">
+							<h2 class="section-title">Daily Summary</h2>
 							<input
 								type="date"
 								id="date"
@@ -85,7 +83,17 @@
 								max={dayjs().format('YYYY-MM-DD')}
 								class="beautiful-date-picker"
 							/>
-						</div>
+						</span>
+						<!-- <div class="date-selector"> -->
+							<!-- <label for="date">Select Date:</label> -->
+							<!-- <input
+								type="date"
+								id="date"
+								bind:value={selectedDate}
+								max={dayjs().format('YYYY-MM-DD')}
+								class="beautiful-date-picker"
+							/> -->
+						<!-- </div> -->
 
 						<div class="summary-grid">
 							<div class="summary-card">

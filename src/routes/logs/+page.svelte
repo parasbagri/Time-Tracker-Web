@@ -137,18 +137,19 @@
 
     .task-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); align-items: start; }
     .task-card { background: var(--bg-card); border: 1px solid var(--border-primary); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); padding: var(--space-4); }
-    .task-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3); }
+    .task-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3); flex-wrap: wrap; gap: var(--space-2); }
     .task-card-header h3 { margin: 0; color: var(--text-primary); }
     .task-card-body { max-height: 240px; overflow-y: auto; display: flex; flex-direction: column; gap: var(--space-2); padding-right: var(--space-2); }
 
     .log-row { display: flex; justify-content: space-between; align-items: center; background: var(--bg-elevated); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: var(--space-3) var(--space-4); }
     .log-time { color: var(--text-secondary); font-size: 0.9rem; }
-    .log-actions { display: flex; align-items: center; gap: var(--space-3); }
+    .log-actions { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
     .log-duration { font-weight: 600; color: var(--text-primary); }
 
     .no-logs, .loading { padding: var(--space-4); background: var(--bg-secondary); border-radius: var(--radius-lg); border: 1px solid var(--border-primary); }
 
     @media (max-width: 768px) {
         .task-cards { grid-template-columns: 1fr; }
+        .log-row { flex-direction: column; align-items: flex-start; gap: var(--space-2); }
     }
 </style>

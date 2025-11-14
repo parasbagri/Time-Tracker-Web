@@ -144,3 +144,22 @@ button {
 	box-shadow: var(--shadow-xl);
 }
 
+/* Responsive base adjustments */
+@media (max-width: 1024px) {
+  body { padding: var(--space-6); }
+}
+
+@media (max-width: 768px) {
+  body { padding: var(--space-4); }
+}
+
+@media (max-width: 480px) {
+  body { padding: var(--space-3); }
+}
+
+/* Media-friendly elements */
+img, video { max-width: 100%; height: auto; }
+
+/* Prevent overflow on small screens */
+.main-content { padding: 0 var(--space-4); }
+

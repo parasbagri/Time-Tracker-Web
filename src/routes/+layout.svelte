@@ -155,11 +155,24 @@
 		.nav-links {
 			flex-wrap: wrap;
 			justify-content: center;
-			gap: var(--space-4);
+			gap: var(--space-3);
 		}
 
 		.nav-link {
 			font-size: 0.9rem;
 		}
+
+		.nav-user {
+			order: 2;
+			flex-basis: 100%;
+			text-align: center;
+			margin-top: var(--space-2);
+		}
+	}
+
+	@media (max-width: 480px) {
+		.nav-logo { font-size: 1.4rem; }
+		.nav-link { font-size: 0.85rem; padding: var(--space-1) var(--space-2); }
+		.navbar { padding: var(--space-3) var(--space-4); }
 	}
 </style>
