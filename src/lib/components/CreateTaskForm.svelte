@@ -1,6 +1,6 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
-	import './CreateTaskForm.css';
+	import './createTaskForm.css';
 
 	const dispatch = createEventDispatcher();
 
