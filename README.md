@@ -2,6 +2,10 @@
 
 A full-stack task management application built with SvelteKit that allows users to manage tasks, track time using a real-time timer, and view daily productivity summaries.
 
+## Live Demo
+
+- Production: https://time-tracker-web-henna.vercel.app/
+
 ## Authentication
 
 - ✔ Fully working auth (Signup, Login, Logout, Protected Routes)
